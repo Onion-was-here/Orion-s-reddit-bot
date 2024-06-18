@@ -12,8 +12,8 @@ Often times there will be a rate limiter that will put the bot to sleep for 10 m
 
 ```praw.exceptions.RedditAPIException: RATELIMIT: "Looks like you've been doing that a lot. Take a break for X minutes.```
 
-#Fix 
+# Fix 
 
-```                                 if "RATELIMIT" in e.error_type:
-                                    print("Rate limit reached. Sleeping for 10 minutes.")
-                                    time.sleep(600)  # Sleep for 10 minutes ```
+```if "RATELIMIT" in e.error_type:
+   print("Rate limit reached. Sleeping for 10 minutes.")
+   time.sleep(600)  # Sleep for 10 minutes ```
