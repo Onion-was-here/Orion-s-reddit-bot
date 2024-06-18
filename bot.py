@@ -24,7 +24,7 @@ def run_bot(r,reply_id):
     # and replies to it with text of your choosing
         for comment in r.subreddit('test').comments(limit = 50):
             try:
-                if "dog" in comment.body and comment.id not in reply_id and comment.author != r.user.me():
+                if "item" in comment.body and comment.id not in reply_id and comment.author != r.user.me():
                     submission = comment.submission
                     print("commentfound!")
                     if submission.locked:
