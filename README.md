@@ -1,4 +1,4 @@
-# Orion-s-reddit-bot
+# Orion's-reddit-bot
 A basic bot that uses praw in order to reply to comments
 
 You will alsow need to craete a config.py file in order to import the user details including the clietn secret and id
